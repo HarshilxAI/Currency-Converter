@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <label for="from">From Currency:</label>
+        <select id="from">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+
+        <label for="to">To Currency:</label>
+        <select id="to">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+
+        <button onclick="convertCurrency()">Convert</button>
+
+        <!-- 📦 Result Box -->
+        <div id="result-box">
+            <h2 id="result">Converted amount will appear here</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

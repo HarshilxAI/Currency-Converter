@@ -1,0 +1,62 @@
+/* 🌙 Dark background & modern font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: #f1f1f1;
+}
+
+/* Container with glassy soft look */
+.container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 25px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* Inputs and dropdowns */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+/* Soft glowing Convert button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(0, 173, 181, 0.2);
+}
+
+button:hover {
+    background-color: #00a3aa;
+    transform: scale(1.02);
+}
+
+/* Result box with contrast border */
+#result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1f2a2e;
+    border: 1px solid #00adb5;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #00f7ff;
+}
