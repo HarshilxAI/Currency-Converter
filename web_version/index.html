@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Currency Converter</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Currency Converter</h1>
+  <div class="container">
+    <h1>🌍 Currency Converter 💱</h1>
 
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" placeholder="Enter amount">
+    <input type="number" id="amount" placeholder="Enter amount" />
 
-        <label for="from">From Currency:</label>
-        <select id="from">
-            <option value="INR">INR</option>
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="JPY">JPY</option>
-            <option value="CAD">CAD</option>
-            <option value="AUD">AUD</option>
-            <option value="CNY">CNY</option>
-            <option value="NZD">NZD</option>
-            <option value="CHF">CHF</option>
-            <option value="SGD">SGD</option>
-            <option value="ZAR">ZAR</option>
-        </select>
+    <select id="from">
+      <option value="">Select currency</option>
+      <option value="INR">INR</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <option value="JPY">JPY</option>
+      <option value="CAD">CAD</option>
+      <option value="AUD">AUD</option>
+      <option value="CNY">CNY</option>
+      <option value="RUB">RUB</option>
+      <option value="AED">AED</option>
+    </select>
 
-        <label for="to">To Currency:</label>
-        <select id="to">
-            <option value="INR">INR</option>
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-        </select>
+    <select id="to">
+      <option value="">Select currency</option>
+      <option value="INR">INR</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <option value="JPY">JPY</option>
+      <option value="CAD">CAD</option>
+      <option value="AUD">AUD</option>
+      <option value="CNY">CNY</option>
+      <option value="RUB">RUB</option>
+      <option value="AED">AED</option>
+    </select>
 
-        <button onclick="convertCurrency()">Convert</button>
+    <button id="convert">Convert 💱</button>
+    <div id="result"></div>
+  </div>
 
-        <!-- 📦 Result Box -->
-        <div id="result-box">
-            <h2 id="result">Converted amount will appear here</h2>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
