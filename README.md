@@ -17,9 +17,18 @@ A clean, dark-themed currency converter built using Python and Web Technologies.
 🧠 Python (`forex-python`)  
 🎨 HTML + CSS (Dark Theme UI with Light Contrasts)  
 ⚙️ JavaScript  
-🌐 Hosted on **Netlify**
+🌐 Hosted on Netlify
 
 ---
 
 ## 📁 Project Structure
 
+```text
+curr_conv/
+│
+├── currency_converter.py
+│
+└── web_version/
+    ├── index.html
+    ├── style.css
+    └── script.js
