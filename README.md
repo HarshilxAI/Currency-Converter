@@ -1,28 +1,25 @@
-💱 Currency Converter Web App
+<h1 align="center">💱 Currency Converter Web App</h1>
 
-This is a simple currency converter project built with Python for backend logic and HTML/CSS/JavaScript for the frontend.
+<p align="center">
+A clean, dark-themed currency converter built using Python and Web Technologies.
+</p>
 
-🔗 Live Demo  
-👉 https://currency-converter-denny.netlify.app
+---
 
-🛠️ Tech Stack Used  
-- Python (forex-python)  
-- HTML  
-- CSS (Dark theme UI with light contrast)  
-- JavaScript  
-- Netlify for hosting
+## 🚀 Live Demo
 
-📁 Project Structure  
-curr_conv/  
-├── currency_converter.py  
-├── web_version/  
-│   ├── index.html  
-│   ├── style.css  
-│   └── script.js
+👉 **Try it here**: [https://currency-converter-denny.netlify.app](https://currency-converter-denny.netlify.app)
 
-🧠 Features  
-- Real-time currency conversion  
-- Soft, glowing dark-themed UI  
-- Smooth, user-friendly interaction
+---
 
-🌟 Crafted with curiosity, caffeine, and code ⚡
+## 🧰 Tech Stack
+
+🧠 Python (`forex-python`)  
+🎨 HTML + CSS (Dark Theme UI with Light Contrasts)  
+⚙️ JavaScript  
+🌐 Hosted on **Netlify**
+
+---
+
+## 📁 Project Structure
+
