@@ -8,7 +8,7 @@ This is a simple currency converter project built with Python for backend logic 
 🛠️ Tech Stack Used  
 - Python (forex-python)  
 - HTML  
-- CSS (Dark theme UI)  
+- CSS (Dark theme UI with light contrast)  
 - JavaScript  
 - Netlify for hosting
 
@@ -22,8 +22,7 @@ curr_conv/
 
 🧠 Features  
 - Real-time currency conversion  
-- Dark theme UI  
-- Smooth frontend interactions
+- Soft, glowing dark-themed UI  
+- Smooth, user-friendly interaction
 
-Made with ❤️ by Denny
-    
+🌟 Crafted with curiosity, caffeine, and code ⚡
