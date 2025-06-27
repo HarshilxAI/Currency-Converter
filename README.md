@@ -2,6 +2,7 @@
 <h1 align="center">💸 Currency Converter 🌍</h1>
 <p align="center">A simple yet powerful currency converter built using HTML, CSS, JavaScript, and Python. No APIs — just clean logic and smart design!</p>
 
+
 ---
 
 ## ✨ Features
