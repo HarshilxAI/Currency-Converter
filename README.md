@@ -1,58 +1,60 @@
+# 💱 Currency Converter
 
-<h1 align="center">💸 Currency Converter 🌍</h1>
-<p align="center">A simple yet powerful currency converter built using HTML, CSS, JavaScript, and Python. No APIs — just clean logic and smart design!</p>
+A simple, responsive currency converter web app that allows users to convert between 10+ global currencies.  
+No external API — all exchange rates handled manually with frontend and backend logic.
+
+---
+
+### 🔗 Live Demo  
+<p align="left">
+  <a href="https://currency-converter-denny.netlify.app" target="_blank">
+    <img src="https://img.shields.io/badge/Click%20Here%20🚀-Live%20Demo-blue?style=for-the-badge" alt="Live Demo Button"/>
+  </a>
+</p>
 
 
 ---
 
-## ✨ Features
-
-- 🔄 Convert between 10+ popular currencies
-- 🌐 Responsive and clean UI
-- 🔧 Manual conversion logic (no API used)
-- 💻 Hosted using Netlify
-- 📂 Well-structured project folder
+### ✨ Features
+- 🌐 Supports 10+ global currencies
+- 💡 Manual logic implementation without API
+- 🖥️ Clean, dark-themed responsive UI
 
 ---
 
-## 🚀 Live Demo
+### 🛠️ Tech Stack
 
-🔗 [Click Here to Try It Live](https://currency-converter-denny.netlify.app)
+#### 🔹 Frontend
+- HTML
+- CSS (Dark UI theme)
+- JavaScript
+
+#### 🔹 Backend
+- Python (`forex-python` for testing, manual logic for live)
+
+#### 🔹 Libraries & APIs
+- No external APIs used in final version  
+- Manual rate-based conversion logic in JavaScript
 
 ---
 
-## 🧠 Tech Stack
-
-| Frontend        | Backend        | Styling        | Deployment     | Tools          |
-|-----------------|----------------|----------------|----------------|----------------|
-| HTML            | Python         | CSS            | Netlify        | VS Code        |
-| JavaScript      | Manual Logic   | Responsive CSS | GitHub         | Git CLI        |
+### 📘 What I Learned
+- DOM manipulation and event handling in JavaScript  
+- Building clean responsive layouts with CSS  
+- Hosting projects with Netlify  
+- GitHub project structure, commits, and versioning
 
 ---
 
+### 🤝 Contributions
+This is a solo-built project. Contributions are welcome — feel free to fork, improve, or suggest!
 
+---
 
+### 👤 Owner - **Harshil Gurjar**
 
-## 🧩 Project Workflow
+### 📬 Contact
+- 📧 Gmail: [hdgurjar2323@gmail.com](mailto:hdgurjar2323@gmail.com)  
+- 💼 LinkedIn: [Harshil Gurjar](https://www.linkedin.com/in/harshil-gurjar23/)
 
-Here's how the Currency Converter project was structured and executed:
-
-1. **📌 Idea Planning**  
-   Decided to create a basic converter without relying on APIs. Focused on building everything manually for better understanding.
-
-2. **🛠️ Development Phase**  
-   - Designed frontend with HTML, CSS (dark theme with light blue highlights)
-   - Handled user interaction and currency logic in JavaScript
-   - Built optional backend with Python for CLI-based conversion
-
-3. **🎨 UI/UX Improvements**  
-   - Added smooth button styles
-   - Responsive layout for better user experience
-
-4. **🚀 Deployment**  
-   - Hosted frontend on **Netlify**
-   - Project is also publicly available on **GitHub**
-
-5. **🔄 Continuous Updates**  
-   - Added more currencies based on user feedback
-   - Improved layout and logic
+---
