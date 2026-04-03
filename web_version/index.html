@@ -1,48 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currency Converter</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Syne:wght@400..800&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  <div class="container">
-    <h1>🌍 Currency Converter 💱</h1>
+  <div class="bg-mesh"></div>
 
-    <input type="number" id="amount" placeholder="Enter amount" />
+  <div class="container glass-panel">
+    <div class="header">
+      <div class="header-title-row">
+        <h1>Currency Converter</h1>
+        <div class="live-badge">
+          <span class="live-dot"></span> LIVE
+        </div>
+      </div>
+      <p class="subtitle">Real-time exchange rates</p>
+    </div>
 
-    <select id="from">
-      <option value="">Select currency</option>
-      <option value="INR">INR</option>
-      <option value="USD">USD</option>
-      <option value="EUR">EUR</option>
-      <option value="GBP">GBP</option>
-      <option value="JPY">JPY</option>
-      <option value="CAD">CAD</option>
-      <option value="AUD">AUD</option>
-      <option value="CNY">CNY</option>
-      <option value="RUB">RUB</option>
-      <option value="AED">AED</option>
-    </select>
+    <div class="input-group">
+      <div class="input-wrapper">
+        <span class="currency-symbol">$</span>
+        <input type="number" id="amount" placeholder="0.00" step="any" min="0" />
+      </div>
+    </div>
 
-    <select id="to">
-      <option value="">Select currency</option>
-      <option value="INR">INR</option>
-      <option value="USD">USD</option>
-      <option value="EUR">EUR</option>
-      <option value="GBP">GBP</option>
-      <option value="JPY">JPY</option>
-      <option value="CAD">CAD</option>
-      <option value="AUD">AUD</option>
-      <option value="CNY">CNY</option>
-      <option value="RUB">RUB</option>
-      <option value="AED">AED</option>
-    </select>
+    <div class="currency-selectors">
+      <div class="input-group half">
+        <div class="select-wrapper">
+          <select id="from">
+            <option value="USD" selected>🇺🇸 USD - US Dollar</option>
+            <option value="EUR">🇪🇺 EUR - Euro</option>
+            <option value="GBP">🇬🇧 GBP - British Pound</option>
+            <option value="INR">🇮🇳 INR - Indian Rupee</option>
+            <option value="JPY">🇯🇵 JPY - Japanese Yen</option>
+            <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+            <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+            <option value="CNY">🇨🇳 CNY - Chinese Yuan</option>
+            <option value="RUB">🇷🇺 RUB - Russian Ruble</option>
+            <option value="AED">🇦🇪 AED - Emirati Dirham</option>
+          </select>
+          <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </div>
+      </div>
 
-    <button id="convert">Convert 💱</button>
-    <div id="result"></div>
+      <div class="switch-btn-container">
+        <button id="switch-currencies" aria-label="Swap currencies" class="icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 16V4m0 0L3 8m4-4l4 4m10 0v12m0 0l-4-4m4 4l4-4" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="input-group half">
+        <div class="select-wrapper">
+          <select id="to">
+            <option value="USD">🇺🇸 USD - US Dollar</option>
+            <option value="EUR" selected>🇪🇺 EUR - Euro</option>
+            <option value="GBP">🇬🇧 GBP - British Pound</option>
+            <option value="INR">🇮🇳 INR - Indian Rupee</option>
+            <option value="JPY">🇯🇵 JPY - Japanese Yen</option>
+            <option value="CAD">🇨🇦 CAD - Canadian Dollar</option>
+            <option value="AUD">🇦🇺 AUD - Australian Dollar</option>
+            <option value="CNY">🇨🇳 CNY - Chinese Yuan</option>
+            <option value="RUB">🇷🇺 RUB - Russian Ruble</option>
+            <option value="AED">🇦🇪 AED - Emirati Dirham</option>
+          </select>
+          <svg class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <button id="convert" class="primary-btn">
+      CONVERT
+    </button>
+
+    <div id="result-container" class="result-box hidden">
+      <div class="result-label">Converted Amount</div>
+      <div id="result" class="result-value"></div>
+    </div>
+  </div>
+
+  <div class="popular-pairs">
+    <button class="pair-chip">USD/EUR</button>
+    <button class="pair-chip">USD/INR</button>
+    <button class="pair-chip">GBP/USD</button>
+    <button class="pair-chip">JPY/USD</button>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
